@@ -23,6 +23,7 @@ from src.main.config import *
 importlib.reload(Rarity_Sorter)
 from src.generators_and_sorters.Rarity_Sorter import *
 
+
 class bcolors:
    '''
    The colour of console messages.
@@ -344,7 +345,7 @@ def send_To_Record_JSON():
    print("If you want the number of NFT DNA sequences to be higher, please add more variants or attributes to your .blend file")
    print("")
 
-'''Utility functions:'''
+#Utility functions:
 
 def turnAll(toggle):
    '''

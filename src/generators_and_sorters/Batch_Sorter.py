@@ -8,7 +8,6 @@ import importlib
 
 dir = os.path.dirname(bpy.data.filepath)
 sys.path.append(dir)
-
 sys.modules.values()
 
 from src.main import config
@@ -16,8 +15,8 @@ from src.main import config
 importlib.reload(config)
 from src.main.config import *
 
-def makeBatches():
 
+def makeBatches():
       file_name = os.path.join(save_path, "NFTRecord.json")
       DataDictionary = json.load(open(file_name))
 

@@ -1,23 +1,23 @@
 import platform
 
 # NFT configurations:
-nftsPerBatch = 0   # Number of NFTs per batch
-renderBatch = 0     # The batch number to render in PNG-Generator
-imageName = ''    # The name of the NFT image produces by PNG-Generator
-fileFormat = '' # Dictate the image extension when Blender renders the images
+nftsPerBatch = 10   # Number of NFTs per batch
+renderBatch = 1     # The batch number to render in PNG-Generator
+imageName = 'TestImage_'    # The name of the NFT image produces by PNG-Generator
+fileFormat = 'PNG' # Dictate the image extension when Blender renders the images
 # Visit https://docs.blender.org/api/current/bpy.types.Image.html#bpy.types.Image.file_format
 # for a list of file formats supported by Blender. Enter the file extension exactly as specified in
 # the Blender API documentation above.
 
 # The path to Blend_My_NFTs folder:
-save_path_mac = ''
+save_path_mac = '/Users/torrinleonard/Desktop/Blend_My_NFTs'
 save_path_windows = r''
 # Place the path in the '', e.g: save_path_mac = '/Users/Path/to/Blend_My_NFTs'
 # Example mac: /Users/Path/to/Blend_My_NFTs
 # Example windows: C:\Users\Path\to\Blend_My_NFTs
 
-enableMaxNFTs = False  # Turn on the maximum number of NFTs, use this to limit the number of DNA sent to NFTRecord, and subsequent batches
-maxNFTs = 0    # The maximum number of NFTs you want to generate - doesn't do anything yet
+enableMaxNFTs = True  # Turn on the maximum number of NFTs, use this to limit the number of DNA sent to NFTRecord, and subsequent batches
+maxNFTs = 100    # The maximum number of NFTs you want to generate - doesn't do anything yet
 
 resetViewport = True # If True: turns all viewport and render cameras on after Image_Generator is finished operations
 

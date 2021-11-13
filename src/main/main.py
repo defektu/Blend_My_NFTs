@@ -1,5 +1,11 @@
 # This script runs DNA_Generator.py and Batch_Sorter.py so you only have to run main.py in Blender
 import bpy
+from bpy.types import (
+    Header,
+    Menu,
+    Panel,
+)
+
 import os
 import sys
 import importlib
@@ -32,3 +38,4 @@ if not config.use3DModels:
 
     DNA_Generator.send_To_Record_JSON()
     Batch_Sorter.makeBatches()
+
